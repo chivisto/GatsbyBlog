@@ -8,33 +8,34 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Isaac Covarrubis Blog" />
     <h1>The Bestest Blog Ever Made</h1>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <StaticImage
-      src="../images/mamiya.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Mamiya Camera"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <StaticImage
-      src="../images/yashica.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Yashica Camera"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/blog-1/">Go to blog post 1</Link> <br />
-      <Link to="/blog-2/">Go to blog post 2</Link> <br />
+    <p className="blog-posts">
+      <div className="container">
+        <StaticImage
+          src="../images/yashica.jpeg"
+          width={300}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt="A Yashica Camera"
+          style={{ marginBottom: `1.45rem` }}
+        />
+        <div className="blog-title">
+          <Link to="/blog-1/">Go to blog post 1</Link> <br />
+        </div>
+      </div>
+      <div className="container">
+        <StaticImage
+          src="../images/mamiya.jpeg"
+          width={300}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt="A Mamiya Camera"
+          style={{ marginBottom: `1.45rem` }}
+        />
+        <div className="blog-title">
+          <Link to="/blog-2/">Go to blog post 2</Link> <br />
+        </div>
+      </div>
+
     </p>
   </Layout>
 )
