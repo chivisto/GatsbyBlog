@@ -7,8 +7,8 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="Isaac Covarrubis Blog" />
-    <h1>The Bestest Blog Ever Made</h1>
     <p className="blog-posts">
+    <h2>Is Yashica the best TLR camera?</h2>
       <div className="container">
         <StaticImage
           src="../images/yashica.jpeg"
@@ -19,9 +19,11 @@ const IndexPage = () => (
           style={{ marginBottom: `1.45rem` }}
         />
         <div className="blog-title">
-          <Link to="/blog-1/">Go to blog post 1</Link> <br />
+          <p>Why is this camera often compared to the Rolliflex? Let's find out.</p>
+          <Link to="/blog-1/">See full blog story</Link> <br />
         </div>
       </div>
+      <h2>Is Mamiya the best medium format camera?</h2>
       <div className="container">
         <StaticImage
           src="../images/mamiya.jpeg"
@@ -32,10 +34,10 @@ const IndexPage = () => (
           style={{ marginBottom: `1.45rem` }}
         />
         <div className="blog-title">
-          <Link to="/blog-2/">Go to blog post 2</Link> <br />
+          <p>Mamiya RZ67 is one of the best cameras made and here's why.  </p>
+          <Link to="/blog-2/">See full blog story</Link> <br />
         </div>
       </div>
-
     </p>
   </Layout>
 )
